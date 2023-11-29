@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 mongoose
   .connect(
-    `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.33mtcp3.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp`,
+   process.env.URL , 
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
